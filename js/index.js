@@ -41,10 +41,8 @@ function updateCountdown() {
         if (minutes % 60 > 0) {
             displayTimeParts.push(`${minutes % 60}분`);
         }
-
-        if (seconds % 60 > 0) {
-            displayTimeParts.push(`${seconds % 60}초`);
-        }
+        
+        displayTimeParts.push(`${seconds % 60}초`);
 
         const displayTime = displayTimeParts.join(' ');
 
