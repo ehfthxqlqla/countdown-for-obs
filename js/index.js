@@ -1,8 +1,8 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const targetTimeString = urlParams.get('time');
-const endMessage = urlParams.get("message")
-const removeMessageOption = urlParams.get("remove")
+const endMessage = urlParams.get("message");
+const removeMessageOption = Boolean(urlParams.get("remove"));
 
 const [timePart, datePart] = targetTimeString.split('@');
 const [hours, minutes, seconds] = timePart.split(':').map(Number);
