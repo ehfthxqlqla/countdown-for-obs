@@ -13,4 +13,4 @@
 > ?space    / 일, 시간, 분, 초 사이의 띄어쓰기 여부를 결정합니다. 형식은 참 또는 거짓(0, 1 또는 true, false)입니다.
 
 # 변수 활용법 (query string)
->>> 일반적으로 query string은 `https://example.com/?first=abc?second=def` 와 같은 형식으로 여러개의 변수를 활용 할 수 없습니다. 첫 번째 변수는 `?firstvariable=value1` 와 같은 형식으로 지정하고, 그 다음부터는 `&secondvariable=value2` 와 같은 형식으로 이어 나가야 합니다.
+> 일반적으로 query string은 `https://example.com/?first=abc?second=def` 와 같은 형식으로 여러개의 변수를 활용 할 수 없습니다. 첫 번째 변수는 `?firstvariable=value1` 와 같은 형식으로 지정하고, 그 다음부터는 `&secondvariable=value2` 와 같은 형식으로 이어 나가야 합니다.
