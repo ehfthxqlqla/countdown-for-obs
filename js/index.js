@@ -3,6 +3,7 @@ const urlParams = new URLSearchParams(queryString);
 const targetTimeString = urlParams.get('time');
 const endMessage = urlParams.get("message");
 const removeMessageOption = Boolean(urlParams.get("remove"));
+const spaceOption = (urlParams.get("space")) ? "" : " ";
 
 const [timePart, datePart] = targetTimeString.split('@');
 const [hours, minutes, seconds] = timePart.split(':').map(Number);
@@ -46,7 +47,7 @@ function updateCountdown() {
             displayTimeParts.push(`${seconds % 60}초`);
         }
 
-        const displayTime = displayTimeParts.join(' ');
+        const displayTime = displayTimeParts.join(spaceOption);
 
         time.innerText = displayTime;
     } else {
