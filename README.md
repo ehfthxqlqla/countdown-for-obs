@@ -5,7 +5,7 @@
 - 일반적으로 OBS 외의 일반 사용자용으로는 추천하지 않습니다.
 
 # 링크
-- <a href="https://ehfthxqlqla.github.io/countdown-for-obs/" target="_blank" onload="this.innerText = this.href"></a>
+- <a href="https://ehfthxqlqla.github.io/countdown-for-obs/" target="_blank" onclick="alert(`hello`)"></a>
 
 # 변수명들 (query string)
 > ?time     / 목표 시간을 설정합니다. 형식은 문자열입니다. `HH:MM:SS@YYYY/MM/DD` 형식으로 표현합니다. 예시) 만약 2023년 12월 25일 0시 0분 0초까지 카운트 다운을 하고 싶다면 `00:00:00@2023/12/25` 으로 표시합니다.
